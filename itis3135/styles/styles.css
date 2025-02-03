@@ -1,0 +1,24 @@
+h1 {
+    text-align: center;
+    margin: 0px auto;
+    padding: 0.5px;
+    color: rgb(23, 82, 49);
+    font-family: sans-serif;
+
+}
+
+head {
+    font-family: sans-serif;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: burlywood;
+}
+
+ul {
+    border-spacing: 0.5vh;
+}
+
+
+

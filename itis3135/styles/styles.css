@@ -11,13 +11,30 @@ head {
     font-family: sans-serif;
 }
 
-body {
+html, body {
     font-family: sans-serif;
     background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+}
+
+main {
+    flex: 1;
+    text-align: center;
 }
 
 ul {
     border-spacing: 0.5vh;
+}
+
+footer {
+    font-size: 10;
+    text-align: left;
+    color: white;
+    padding: 10px;
+
 }
 
 

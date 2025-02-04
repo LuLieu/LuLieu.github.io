@@ -26,7 +26,10 @@ main {
 }
 
 ul {
-    border-spacing: 0.5vh;
+    border-spacing: auto;
+    text-align: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0 auto;
 }
 
 footer {
@@ -35,6 +38,28 @@ footer {
     color: white;
     padding: 10px;
 
+}
+
+nav {
+    text-align: center;
+}
+
+a {
+    color: cornflowerblue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(23, 82, 49);
+}
+
+footer > p {
+    text-align: center;
+}
+
+img {
+    max-width: 300px;
+    
 }
 
 

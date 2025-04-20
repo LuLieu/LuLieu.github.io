@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BYO Intro</title>
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+  <script defer src="scripts/survey.js"></script>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <header>
+    <div data-include="components/header.html"></div>
+    </header>
+  <main>
+    <h2>BYO Introdduction Form</h2>
+    <h3>Filling out the form below and clicking submit will generate an introduction!</h3>
+
+    <form id="introForm" class="byo-form">
+        <label>First Name: <input type="text" name="firstName" required value="Lucas" /></label><br />
+        <label>Middle Initial: <input type="text" name="middleInitial" maxlength="1" /></label><br />
+        <label>Last Name: <input type="text" name="lastName" required value="Rettke" /></label><br />
+        <label>Mascot: <input type="text" name="mascot" required value="Lovely Roadrunner" /></label><br />
+        <label>Image: <input type="file" accept=".png,.jpg,.jpeg" name="image" id="imageInput" /></label><br />
+        <label>Image Caption: <input type="text" name="imageCaption" required value="Bathroom pic at an airbnb" /></label><br />
+        <img src="images/IMG_0536.png" alt="me" />
+        <p> </p>
+        <label>Personal Background:
+          <input type="text" name="personalBackground" required value="I grew up in North Charlotte." />
+        </label><br />
+        
+        <label>Professional Background:
+          <input type="text" name="professionalBackground" required value="I'm a waiter at a restaurant and I've worked there since the day I could work." />
+        </label><br />
+        
+        <label>Academic Background:
+          <input type="text" name="academicBackground" required value="Currently a Junior studying Computer Science at UNCC with a concentration in cybersecurity." />
+        </label><br />
+        
+        <label>Background in Web Development:
+          <input type="text" name="webBackground" required value="I've been working with some form of code for nearly a decade now. It all started with some crappy minecraft mod maker class that ended up not working." />
+        </label><br />
+        
+        <label>Primary Computer Platform:
+          <input type="text" name="platform" required value="Windows 11 laptop, Windows 11 PC at home" />
+        </label><br />
+      
+        <fieldset>
+            <legend>Courses</legend>
+            <label>Courses Currently Taking:</label>
+            <button type="button" onclick="addCourse()">+ Add Course</button><br />
+          
+            <div class="courseEntry">
+                <label>Course ID: <input type="text" class="courseID" value="ITSC-3688" /></label>
+                <label>Course Name: <input type="text" class="courseName" value="Computers & Their Impact on Society" /></label>
+                <label>Reason: <input type="text" class="courseReason" value="Required, but the professor has a very interesting model for the class. Might be fun." /></label>
+                <button type="button" class="delete-btn" onclick="this.parentElement.remove()">Delete</button>
+              </div>
+              
+              <div class="courseEntry">
+                <label>Course ID: <input type="text" class="courseID" value="ITIS-3135" /></label>
+                <label>Course Name: <input type="text" class="courseName" value="Web-Based Application Design and Development" /></label>
+                <label>Reason: <input type="text" class="courseReason" value="Required for cybersecurity, also hoping that this extrapolates on my brief YouTube knowledge of HTML." /></label>
+                <button type="button" class="delete-btn" onclick="this.parentElement.remove()">Delete</button>
+              </div>
+              
+              <div class="courseEntry">
+                <label>Course ID: <input type="text" class="courseID" value="ITSC-2181" /></label>
+                <label>Course Name: <input type="text" class="courseName" value="Intro to Computer Systems" /></label>
+                <label>Reason: <input type="text" class="courseReason" value="Also required, but maneuvering the shell terminal has proven to be quite fun. I have high hopes for this class." /></label>
+                <button type="button" class="delete-btn" onclick="this.parentElement.remove()">Delete</button>
+              </div>
+              
+              <div class="courseEntry">
+                <label>Course ID: <input type="text" class="courseID" value="STAT-2122" /></label>
+                <label>Course Name: <input type="text" class="courseName" value="Intro to Probability and Statistics" /></label>
+                <label>Reason: <input type="text" class="courseReason" value="My final math course, hopefully it isn’t the worst!" /></label>
+                <button type="button" class="delete-btn" onclick="this.parentElement.remove()">Delete</button>
+              </div>
+              
+              <div class="courseEntry">
+                <label>Course ID: <input type="text" class="courseID" value="SOCY-1511" /></label>
+                <label>Course Name: <input type="text" class="courseName" value="Sociological Approaches to Local Issues" /></label>
+                <label>Reason: <input type="text" class="courseReason" value="This might be my least favorite class but it’s my last elective credit." /></label>
+                <button type="button" class="delete-btn" onclick="this.parentElement.remove()">Delete</button>
+              </div>
+          </fieldset>
+      
+        <label>Funny Thing?
+          <input type="text" name="funnyThing" />
+        </label><br />
+      
+        <label>Anything Else?
+          <input type="text" name="anythingElse" value="I really need to update my resume." />
+        </label><br />
+      
+        <label>
+          <input type="checkbox" name="agreement" required />
+          I understand that what is on this page is not password protected and I will not put anything here that I don't want publicly available.
+        </label><br /><br />
+      
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+      </form>
+
+    <div id="result"></div>
+  </main>
+  <footer>
+    <div data-include="components/footer.html"></div>
+  </footer>
+  <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>

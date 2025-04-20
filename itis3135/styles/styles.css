@@ -1,6 +1,4 @@
-* {
-    margin: 0 auto;
-}
+
 h1 {
     text-align: center;
     margin: 0px auto;
@@ -32,6 +30,10 @@ html, body {
 main {
     flex: 1;
     text-align: center;
+    margin: 0 auto; /*edited*/
+    max-width: 1000px; /*edited*/
+    width: 90%;
+
 }
 
 ul {
@@ -70,6 +72,56 @@ img {
     max-width: 300px;
     
 }
+
+.byo-form {
+    margin: 0 auto;
+    text-align: justify;
+    padding: 1em;
+    font-size: larger;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #ccc;
+}
+
+button {
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    color: rgb(23, 82, 49);
+    
+}
+@media screen and (min-width: 981px) and (max-width: 1400px){ /*for tablets*/
+    main{
+        max-width: 600px;
+        width: 55%;
+    }
+    table{
+        font-size: 30;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 601px) and (max-width: 980px){ /*for portrait phones*/
+    main {
+        max-width: 300px;
+        width: 30%;
+        
+    }
+    table{
+        font-size: 20;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 370px) and (max-width: 600px){ /*for portrait phones*/
+    main {
+        max-width: 150px;
+        width: 20%;
+        
+    }
+    table{
+        font-size: 15;
+        margin: 0 auto;
+    }
+}
+
+
 
 
 

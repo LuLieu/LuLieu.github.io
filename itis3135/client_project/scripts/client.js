@@ -1,6 +1,6 @@
 $(document).ready(function () {
   
-  $('#anonForm').on('submit', function (e) {
+  $('#anonForm').on('submit', function (e) { /* submit form with success message, no storage of input */
     e.preventDefault();
     const first = $('#firstName').val().trim();
     const last = $('#lastName').val().trim();
@@ -13,7 +13,7 @@ $(document).ready(function () {
   });
 
   
-  const swiper = new Swiper('.mySwiper', {
+  const swiper = new Swiper('.mySwiper', { /* swiper.js */
     loop: true,
     autoplay: {
       delay: 3000

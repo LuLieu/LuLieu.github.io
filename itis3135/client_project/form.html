@@ -15,9 +15,9 @@
     <h1>VOICE - Valuing Our Integrity, Consent, and Empowerment</h1>
     <nav class="navbar">
       
-        <a href="index.html" class="active">Home</a>
+        <a href="index.html">Home</a>
         <a href="resources.html">Resources</a>
-        <a href="form.html">Anonymous Form</a>
+        <a href="form.html" class="active">Anonymous Form</a>
         <a href="stories.html">When To Use Your VOICE</a>
         <a href="about.html">About Us</a>
       
@@ -25,13 +25,27 @@
   </header>
 
   <main>
-    <h2>Welcome to VOICE</h2>
-    <figure>
-        <img src="images/voice.png" alt="voice logo" width = 550 height = 450>
-        <figcaption>VOICE Logo</figcaption>
-    </figure>
-    <h3>A student-ran club focused on raising awareness on the signs of sexual assault and providing resources
-        to those affected.</h3>
+    <h2>Anonymous Submission Form</h2>
+    <h3><strong>If you need emergency assistance, please call 911.</strong></h3>
+    <p>Complete the form below to submit your information confidentially. We will contact you as soon as possible.</p>
+
+
+    <form id="anonForm">
+      <label for="firstName">First Name:</label><br>
+      <input type="text" id="firstName" name="firstName" required><br><br>
+
+      <label for="lastName">Last Name:</label><br>
+      <input type="text" id="lastName" name="lastName" required><br><br>
+
+      <label for="phone">Phone Number:</label><br>
+      <input type="tel" id="phone" name="phone" required placeholder="e.g. 123-456-7890"><br><br>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="successMessage" style="display:none; margin-top:1em; color: green;">
+      ✅ Your form was submitted successfully. We will be in touch shortly.
+    </div>
   </main>
 
   <footer>

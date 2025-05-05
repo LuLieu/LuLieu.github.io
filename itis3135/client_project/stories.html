@@ -10,24 +10,14 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="scripts/client.js" defer></script>
 </head>
-<body>
+<body data-page="stories">
   <header>
-    <h1>VOICE - Valuing Our Integrity, Consent, and Empowerment</h1>
-    <nav class="navbar">
-      
-        <a href="index.html">Home</a>
-        <a href="resources.html">Resources</a>
-        <a href="form.html">Anonymous Form</a>
-        <a href="stories.html" class="active">When To Use Your VOICE</a>
-        <a href="about.html">About Us</a>
-      
-    </nav>
+    <div data-include="components/header.html"></div>
   </header>
 
   <main>
-    <h1>When to Use Your VOICE</h1>
-    <p>Using your voice means standing up for yourself or someone else when something doesn’t feel right. It can be hard — but your voice has power, and your boundaries matter.</p>
-
+    <h2>When to Use Your VOICE</h2>
+    <p>Using your voice means standing up for yourself or someone else when something doesn't feel right. It can be hard — but your voice has power, and your boundaries matter.</p>
     <section class="scenarios">
       <h2>Speak Up When...</h2>
       <ul>
@@ -40,7 +30,7 @@
     </section>
     <figure class="traffic">
         <img src="images/traffic.jpg" alt="symbolism of disagreement">
-        <figcaption>Symbolism of disagreement</figcaption>
+        <figcaption><em>Symbolism of disagreement</em></figcaption>
     </figure>
     <section class="examples">
       <h2>Using Your VOICE Might Look Like...</h2>
@@ -54,7 +44,8 @@
   </main>
 
   <footer>
-    <p>Created by <a href="https://webpages.charlotte.edu/lrettke/itis3135/rettkeandco.com/rettkeandco.html">Lucas & Co. LLC</a> © 2025, Certified in <a href="https://www.freecodecamp.org/certification/LuRe/responsive-web-design">Responsive Web Design</a></p>
+    <div data-include="components/footer.html"></div>
   </footer>
+  <script src="scripts/HTMLInclude.min.js"></script>
 </body>
 </html>

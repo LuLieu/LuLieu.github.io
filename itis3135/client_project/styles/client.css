@@ -16,6 +16,9 @@ h1{
     border-radius: 2px;
     border-color: grey;
     font-family: 'Montserrat', sans-serif;
+    border-radius: 5px;
+    background-color: rgb(190, 150, 225);
+    padding: 0.5em 1em;
 }
 h2{
     text-align: center;
@@ -65,6 +68,8 @@ h3 {
 figure{
     justify-content: center;
     align-items: center;
+    align-content: center;
+    text-align: center;
 }
 footer{
     border-top: 5px double var(--primary);
@@ -75,5 +80,22 @@ footer{
 p{
     font-size: 15px;
 }
-
+.swiper-slide > img{
+    max-height: 600px;
+    text-align: center;
+}
+.active-tab{
+    font-weight: bold;
+    border-bottom: 6px solid #ffffff;
+    background-color: var(--hover-bg);
+    color: #fff;
+}
+main{
+    max-width: 900px;
+    margin: 0 auto;       
+    padding: 0 1rem;      
+}
+figcaption{
+    font-style: italic;
+}
 

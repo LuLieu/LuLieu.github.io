@@ -10,24 +10,18 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="scripts/client.js" defer></script>
 </head>
-<body>
+<body data-page="form">
   <header>
-    <h1>VOICE - Valuing Our Integrity, Consent, and Empowerment</h1>
-    <nav class="navbar">
-      
-        <a href="index.html">Home</a>
-        <a href="resources.html">Resources</a>
-        <a href="form.html" class="active">Anonymous Form</a>
-        <a href="stories.html">When To Use Your VOICE</a>
-        <a href="about.html">About Us</a>
-      
-    </nav>
+    <div data-include="components/header.html"></div>
   </header>
 
   <main>
     <h2>Anonymous Submission Form</h2>
-    <h3><strong>If you need emergency assistance, please call 911.</strong></h3>
+    <h3><strong>If you are in need of emergency assistance, please call 911.</strong></h3>
     <p>Complete the form below to submit your information confidentially. We will contact you as soon as possible.</p>
+    <p>By completing this form, you are acknowledging that you have taken the <em>biggest step forward towards peace and
+       prosperity, allowing you to grow and escape the shackles of your soon-to-be past. <strong>You can do this!</strong></em> 
+    </p>
 
 
     <form id="anonForm">
@@ -49,7 +43,8 @@
   </main>
 
   <footer>
-    <p>Created by <a href="https://webpages.charlotte.edu/lrettke/itis3135/rettkeandco.com/rettkeandco.html">Lucas & Co. LLC</a> © 2025, Certified in <a href="https://www.freecodecamp.org/certification/LuRe/responsive-web-design">Responsive Web Design</a></p>
+    <div data-include="components/footer.html"></div>
   </footer>
+  <script src="scripts/HTMLInclude.min.js"></script>
 </body>
 </html>

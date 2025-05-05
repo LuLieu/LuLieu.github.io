@@ -10,22 +10,14 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="scripts/client.js" defer></script>
 </head>
-<body>
+<body data-page="resources">
   <header>
-    <h1>VOICE - Valuing Our Integrity, Consent, and Empowerment</h1>
-    <nav class="navbar">
-      
-        <a href="index.html">Home</a>
-        <a href="resources.html" class="active">Resources</a>
-        <a href="form.html">Anonymous Form</a>
-        <a href="stories.html">When To Use Your VOICE</a>
-        <a href="about.html">About Us</a>
-      
-    </nav>
+    <div data-include="components/header.html"></div>
   </header>
 
   <main>
-    <h1>Support & Resources</h1>
+    <h2>Support & Resources</h2>
+    
     <h2>We're here to help.</h2>
 
     <section class="resource-list">
@@ -56,7 +48,8 @@
   </main>
 
   <footer>
-    <p>Created by <a href="https://webpages.charlotte.edu/lrettke/itis3135/rettkeandco.com/rettkeandco.html">Lucas & Co. LLC</a> © 2025, Certified in <a href="https://www.freecodecamp.org/certification/LuRe/responsive-web-design">Responsive Web Design</a></p>
+    <div data-include="components/footer.html"></div>
   </footer>
+  <script src="scripts/HTMLInclude.min.js"></script>
 </body>
 </html>

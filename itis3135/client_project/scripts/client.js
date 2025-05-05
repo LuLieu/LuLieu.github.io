@@ -23,3 +23,22 @@ $(document).ready(function () {
     }
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const page = document.body.getAttribute("data-page");
+
+  const waitForHeader = setInterval(() => {
+    const navLinks = document.querySelectorAll('nav a[data-nav]');
+
+    if (navLinks.length > 0) {
+      navLinks.forEach((link) => {
+        if (link.dataset.nav === page) {
+          link.classList.add("active-tab");
+        }
+      });
+
+      clearInterval(waitForHeader); // stop once nav is ready
+    }
+  }, 100);
+});
+

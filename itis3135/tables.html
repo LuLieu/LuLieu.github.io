@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <title>Lovely Roadrunner - Welcome</title>
+    <style>
+        h1 {
+    text-align: center;
+    margin: 0px auto;
+    padding: 20px;
+    color: #e3f09b;
+    font-family: sans-serif;
+    font-size: 300%;
+
+}
+/** https://coolors.co/f79f79-f7d08a-e3f09b-87b6a7-5b5941 **/
+head {
+    font-family: sans-serif;
+}
+
+html, body {
+    font-family: sans-serif;
+    background-image: linear-gradient(#87b6a7, #f7d08a, grey);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    
+}
+
+main {
+    flex: 1;
+    text-align: center;
+}
+
+ul {
+    border-spacing: auto;
+    text-align: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0 auto;
+}
+
+footer {
+    font-size: 10;
+    text-align: left;
+    color: white;
+    padding: 10px;
+
+}
+
+nav {
+    text-align: center
+    
+}
+
+a {
+    color: #5b5941;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(23, 82, 49);
+}
+
+footer > p {
+    text-align: center;
+}
+
+img {
+    max-width: 300px;
+    
+}
+
+main > img{
+    border-style: solid;
+    border-radius: 50%;
+    border-color: #f79f79;
+}
+
+main > main{
+    font-size: smaller;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 2rem;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+th, td {
+  border: 1px solid #444;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+}
+
+tr:nth-child(even) td {
+  background-color: #e6f2ff;
+}
+
+tr:nth-child(odd) td {
+  background-color: #ffffff;
+}
+
+figcaption {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+table tr:hover td {
+  background-color: #d0ebff;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="roadwrappers/lrindex.html"><h1>Lovely Roadrunner Wraps</h1></a>
+            ~
+            <a href="roadwrappers/about.html">About us</a>
+            ~
+            <a href="https://webpages.charlotte.edu/lrettke/itis3135/tables.html">Tables</a>
+            ~
+            <a href="">Gallery</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Tables Assignment</h2>
+
+        <h3>My Tabular Data</h3>
+        <ul>
+          <li>Joel Miller - joelm@hotmail.com</li>
+          <li>Shinra Kusakabe - fireforce13@gmail.com</li>
+          <li>Angela Zeigler - angelaz@icloud.com</li>
+          <li>Sue Storm - sstorm@yahoo.com</li>
+          <li>Gabriel Reyes - g.reyes@aol.com</li>
+          <li>Brittany Broski - bbroski@gmail.com</li>
+          <li>Lucas Rettke - lucasr@yahoo.com</li>
+        </ul>
+    
+        <h3>Employee Data in Simple Table</h3>
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Years of Service</th>
+          </tr>
+          <tr><td>Joel Miller</td><td>joelm@hotmail.com</td><td>15</td></tr>
+          <tr><td>Shinra Kusakabe</td><td>fireforce13@gmail.com</td><td>5</td></tr>
+          <tr><td>Angela Zeigler</td><td>angelaz@icloud.com</td><td>12</td></tr>
+          <tr><td>Sue Storm</td><td>sstorm@yahoo.com</td><td>9</td></tr>
+          <tr><td>Gabriel Reyes</td><td>g.reyes@aol.com</td><td>11</td></tr>
+          <tr><td>Brittany Broski</td><td>bbroski@gmail.com</td><td>3</td></tr>
+          <tr><td>Lucas Rettke</td><td>lucasr@yahoo.com</td><td>2</td></tr>
+        </table>
+    
+        <h3>Employee Data in Complex Table</h3>
+        <figure>
+          <figcaption>Employee Information</figcaption>
+          <table>
+            <tr>
+              <th scope="col">Category</th>
+              <th scope="col">Name</th>
+              <th scope="col">Email</th>
+              <th scope="col">Years</th>
+              <th scope="col">Salary</th>
+            </tr>
+            <tr>
+              <td rowspan="1">Executives</td>
+              <td>Joel Miller</td>
+              <td>joelm@hotmail.com</td>
+              <td>15</td>
+              <td>$30,080</td>
+            </tr>
+            <tr>
+              <td rowspan="2">Team Leads</td>
+              <td>Angela Zeigler</td>
+              <td>angelaz@icloud.com</td>
+              <td>12</td>
+              <td>$105,700</td>
+            </tr>
+            <tr>
+              <td>Sue Storm</td>
+              <td>sstorm@yahoo.com</td>
+              <td>9</td>
+              <td>$98,076</td>
+            </tr>
+            <tr>
+              <td rowspan="2">Operatives</td>
+              <td>Gabriel Reyes</td>
+              <td>g.reyes@aol.com</td>
+              <td>11</td>
+              <td>$40,394</td>
+            </tr>
+            <tr>
+              <td>Shinra Kusakabe</td>
+              <td>fireforce13@gmail.com</td>
+              <td>5</td>
+              <td>$86,456</td>
+            </tr>
+            <tr>
+              <td rowspan="2">Support Staff</td>
+              <td>Brittany Broski</td>
+              <td>bbroski@gmail.com</td>
+              <td>3</td>
+              <td>$140,395</td>
+            </tr>
+            <tr>
+              <td>Lucas Rettke</td>
+              <td>lucasr@yahoo.com</td>
+              <td>2</td>
+              <td>$90,428</td>
+            </tr>
+            <tr>
+              <th colspan="3" scope="row">Total Years of Service</th>
+              <td>57</td>
+              <td>$591,529</td>
+            </tr>
+          </table>
+        </figure>
+    </main>
+    <footer>
+        <nav>
+          Created by <a href="https://webpages.charlotte.edu/lrettke/itis3135/rettkeandco.com/rettkeandco.html">Lucas & Co. LLC</a> © 2025, Certified in <a href="https://www.freecodecamp.org/certification/LuRe/responsive-web-design">Responsive Web Design</a>
+          ||
+          <a href="https://webpages.charlotte.edu/lrettke/itis3135">itis3135</a>
+          ||
+        </nav>
+    </footer>
+</body>
+</html>

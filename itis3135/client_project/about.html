@@ -12,23 +12,13 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="scripts/client.js"></script>
 </head>
-<body>
+<body data-page="about">
   <header>
-    <h1>VOICE - Valuing Our Integrity, Consent, and Empowerment</h1>
-    <nav class="navbar">
-      
-        <a href="index.html">Home</a>
-        <a href="resources.html">Resources</a>
-        <a href="form.html">Anonymous Form</a>
-        <a href="stories.html">When To Use Your VOICE</a>
-        <a href="about.html" class="active">About Us</a>
-      
-    </nav>
+    <div data-include="components/header.html"></div>
   </header>
-
   <main>
+    <!--THINGS TO FIX: form have more, home page more, fix dynamic header-->
     <h2>Our Story</h2>
-
     <section class="about-content">
       <h3>VOICE was founded by Amy, a passionate advocate for survivors of sexual assault. After experiencing firsthand how isolating recovery can feel, Amy created VOICE to offer a safe and empowering
         space to discover resources and find the help she needed.</h3>
@@ -46,7 +36,8 @@
   </main>
 
   <footer>
-    <p>Created by <a href="https://webpages.charlotte.edu/lrettke/itis3135/rettkeandco.com/rettkeandco.html">Lucas & Co. LLC</a> © 2025, Certified in <a href="https://www.freecodecamp.org/certification/LuRe/responsive-web-design">Responsive Web Design</a></p>
+    <div data-include="components/footer.html"></div>
   </footer>
+  <script src="scripts/HTMLInclude.min.js"></script>
 </body>
 </html>

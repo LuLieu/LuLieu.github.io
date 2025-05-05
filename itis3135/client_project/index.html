@@ -10,32 +10,28 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="scripts/client.js" defer></script>
 </head>
-<body>
+<body data-page="home">
   <header>
-    <h1>VOICE - Valuing Our Integrity, Consent, and Empowerment</h1>
-    <nav class="navbar">
-      
-        <a href="index.html" class="active">Home</a>
-        <a href="resources.html">Resources</a>
-        <a href="form.html">Anonymous Form</a>
-        <a href="stories.html">When To Use Your VOICE</a>
-        <a href="about.html">About Us</a>
-      
-    </nav>
+    <div data-include="components/header.html"></div>
   </header>
 
   <main>
     <h2>Welcome to VOICE</h2>
     <figure>
         <img src="images/voice.png" alt="voice logo" width = 550 height = 450>
-        <figcaption>VOICE Logo</figcaption>
+        <figcaption><em>VOICE Logo</em></figcaption>
     </figure>
-    <h3>A student-ran club focused on raising awareness on the signs of sexual assault and providing resources
-        to those affected.</h3>
+    <h3>Why We're Here</h3>
+    <p>It's an unfortunate truth that many people are unsafe in their current or past relationships. When our <a href="about.html">founder</a> sought
+    out community after complications with her past relationships that affected her every day life and well-being, she decided to create a safe space
+  that allows all students to learn, heal, and spread awareness on the signs of sexual assault in your own or others' relationships.</p>
+  <p>At VOICE, we aim to offer a sense of community and <a href="resources.html">resources</a> to those in need. Find out how you can help today!</p>
+    
   </main>
 
   <footer>
-    <p>Created by <a href="https://webpages.charlotte.edu/lrettke/itis3135/rettkeandco.com/rettkeandco.html">Lucas & Co. LLC</a> © 2025, Certified in <a href="https://www.freecodecamp.org/certification/LuRe/responsive-web-design">Responsive Web Design</a></p>
+    <div data-include="components/footer.html"></div>
   </footer>
+  <script src="scripts/HTMLInclude.min.js"></script>
 </body>
 </html>
